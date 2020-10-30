@@ -15,6 +15,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/populate", { us
 // routes //
 
 app.use(require("./routes/view.js"));
+app.use(require("./routes/api.js"));
 
 app.listen(PORT, function() {
     console.log('listening on port ' + PORT);
