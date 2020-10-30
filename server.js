@@ -1,11 +1,12 @@
 const express = require('express');
-const { PromiseProvider } = require('mongoose');
+// const logger = require('morgan');
+// const mongoose = require('mongoose');
 
-const PORT = 8080
+const PORT = process.env.PORT || 8080;
 
 const app = express();
 
-(app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(express.static("public"));
