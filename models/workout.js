@@ -1,7 +1,9 @@
+// requires 
 const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
+// new schema built off of seeder file
 const workoutSchema = new Schema(
     {
         day: {
@@ -39,6 +41,7 @@ const workoutSchema = new Schema(
             }
         ]
     },
+    // json readable 
     {
         toJSON: {
             virtuals: true
@@ -46,6 +49,8 @@ const workoutSchema = new Schema(
     }
 );
 
+// use workout model 
 const Workout = mongoose.model("Workout", workoutSchema);
 
+// export 
 module.exports = Workout;
