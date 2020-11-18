@@ -2,17 +2,17 @@
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-[Find this app here](https://github.com/zacharybryan/employeeSummary)
+![screenshot of home screen](./assets/homepage.png)
+![screenshot of charts](./assets/charts.png)
 
-![screenshot of home screen](./assets/home-screen.png)
-
-![screenshot of final screen](./assets/completed-Html.jpg)
-
-
+[Find this app here](https://workout-tracker-zb.herokuapp.com/)
 ---
 ## Description
 
-DESCRIBE APP 
+This app is designed to track your workouts! User inputs workout data:
+- exercise type: cardio vs resistance
+- includes fields for exercise name, time, and weight.
+
 
 ---
 ### Table of Contents
@@ -27,15 +27,10 @@ DESCRIBE APP
 ---
 ### Installation
 
-* Install Node.js if not currently installed on device [Node.js](https://nodejs.org/en/download/)
-* [Get clone from github](https://github.com/zacharybryan/employeeSummary)
-* Run git clone git@github.com:zacharybryan/employeeSummary.git from the command line
-* Run npm install from command line in employeeSummary file
-* To Start run node app.js in the command line
-
-
-[Watch the demo here!](./assets/demo.mp4)
-steps here
+This project can be accessed through any internet capable browser. If you would like to modify the code itself:
+* Run npm install to get all dependencies
+* Spin up a MongoDB database: Locally or Cloud Service such as MongoDB Atlas.
+* Declare personal connection string as URI in a .env file within the base directory
 
 ---
 ### Contributing
